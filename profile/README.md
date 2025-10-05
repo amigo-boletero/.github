@@ -1,28 +1,5 @@
 ## Hi there 👋
 
-```mermaid
-usecase diagram
-
-actor Customer
-actor "Online Retailer" as Retailer
-
-rectangle "Online Shopping System" {
-  usecase (Browse Products)
-  usecase (Add to Cart)
-  usecase (View Cart)
-  usecase (Checkout)
-  usecase (Make Payment)
-}
-
-Customer --> (Browse Products)
-Customer --> (Add to Cart)
-Customer --> (View Cart)
-Customer --> (Checkout)
-Retailer --> (Make Payment)
-
-(Checkout) ..> (Make Payment) : <<include>>
-```
-
 <!--
 
 **Here are some ideas to get you started:**
